@@ -1,4 +1,4 @@
-# 02 - Hello World
+# 01.02 - Hello World
 
 [<< Back](../README.md)
 
@@ -18,7 +18,7 @@
 
 1. We can use the command `tsc --init` to create a `tsconfig.json` file with default values.
 
-2. In the `tsconfig.json` file, set the set `sourceMap` property to `true`. This will generate a `*.js.map` files that will be used for debugging. And set the `outDir` property to `./out`.
+2. In the `tsconfig.json` file, set the set `sourceMap` property to `true`. This will generate a `*.js.map` files that will be used for debugging. And set the `outDir` property to `./dist`.
 
 3. Create the `.vscode/launch.json` file with the following content:
 
@@ -32,7 +32,7 @@
       "request": "launch",
       "program": "${workspaceFolder}/index.ts",
       "preLaunchTask": "tsc: build - tsconfig.json",
-      "outFiles": [ "${workspaceFolder}/out/**/*.js" ]
+      "outFiles": [ "${workspaceFolder}/dist/**/*.js" ]
     }
   ]
 }
@@ -42,13 +42,13 @@
 
 In the `launch.json` file, the `program` property should point to the main file of the project. In this case, the `index.ts` file.
 
-And the `outFiles` property should point to the `out` folder exacly as it is in the `tsconfig.json` file (the `outDir` property).
+And the `outFiles` property should point to the `dist` folder exacly as it is in the `tsconfig.json` file (the `outDir` property).
 
-The folder `outDir` (in this case, `out`) should not be included in the source control because it will be generated when the project is built. This is why we should add it to the `.gitignore` file.
+The folder `outDir` (in this case, `dist`) should not be included in the source control because it will be generated when the project is built. This is why we should add it to the `.gitignore` file.
 
 **Example:**
 ```gitignore
-out
+dist
 ```
 
 

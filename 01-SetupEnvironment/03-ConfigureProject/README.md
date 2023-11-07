@@ -1,4 +1,4 @@
-# 03 - Configure Project
+# 01.03 - Configure Project
 
 [<< Back](../README.md)
 
@@ -44,7 +44,7 @@ This file contains the project's metadata and dependencies.
 
 In this file, we have two important sections: `dependencies` and `devDependencies`.
 - `dependencies` are the packages that are required to run the application. To install a package, use `npm install <package-name>`.
-- `devDependencies` are the packages that are required to develop the application. This will not be included in the final build. To install a package, use `npm install <package-name> --save-dev`.
+- `devDependencies` are the packages that are required to develop the application. This will not be included in the final build. To install a package, use `npm install <package-name> --save-dev` or a shortcut `npm install -D <package-name>`.
 
 
 ### Install TypeScript
@@ -77,8 +77,8 @@ We can create our custom scripts to improve the development experience. In the f
 {
   ...
   "scripts": {
-    "build": "tsc",
-    "start": "node out/app"
+    "build": "npx tsc",
+    "start": "node dist/app"
   }
   ...
 }
@@ -93,7 +93,7 @@ For this, we need to install the `ts-node` package. This package will compile th
 
 To install the `ts-node` package, we need to run `npm install ts-node --save-dev`. The `ts-node` also should be added to the `devDependencies`, because we only need it to improve the development experience.
 
-And now we can run the project using `npx ts-node app.ts`. Note that wasn't generated the `out` folder. This is because the `ts-node` will compile the project in memory and run it.
+And now we can run the project using `npx ts-node app.ts`. Note that wasn't generated the `dist` folder. This is because the `ts-node` will compile the project in memory and run it.
 
 We can improve again the experience to build and run the project, adding the following script to the `package.json` file:
 
@@ -101,7 +101,7 @@ We can improve again the experience to build and run the project, adding the fol
 {
   ...
   "scripts": {
-    "dev": "ts-node app.ts"
+    "dev": "npx ts-node app.ts"
   }
   ...
 }

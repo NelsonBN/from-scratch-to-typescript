@@ -2,19 +2,18 @@
   "name": "DemoApp",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "build": "npx tsc",
-    "start": "node dist/app",
-    "dev": "npx ts-node app.ts",
-    "watch": "npx nodemon app.ts"
+    "test": "npx jest",
+    "build": "npx tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.0.1",
-    "ts-node": "^10.9.1",
+    "@types/jest": "^29.5.7",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
     "typescript": "^5.2.2"
   }
 }

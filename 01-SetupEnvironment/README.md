@@ -1,4 +1,4 @@
-# Setup Environment
+# 01. Setup Environment
 
 [<< Back](../README.md)
 
@@ -6,6 +6,8 @@
 
 
 [Official documentation](https://code.visualstudio.com/docs/languages/typescript?WT.mc_id=javascript-14034-gllemos)
+
+
 
 ## Install TypeScript
 We are going to install TypeScript globally using npm.

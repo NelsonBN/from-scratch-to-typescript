@@ -23,3 +23,5 @@
   - [01 - Hello World](./01-SetupEnvironment/01-HelloWorld/README.md)
   - [02 - Debugging](./01-SetupEnvironment/02-Debugging/README.md)
   - [03 - Configure Project](./01-SetupEnvironment/03-ConfigureProject/README.md)
+- [02 - Tests](./02-Tests/README.md)
+  - [01 - Setup Tests](./02-Tests/01-SetupTests/README.md)
