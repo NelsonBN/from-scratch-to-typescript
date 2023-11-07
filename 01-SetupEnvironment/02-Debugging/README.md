@@ -44,6 +44,13 @@ In the `launch.json` file, the `program` property should point to the main file 
 
 And the `outFiles` property should point to the `out` folder exacly as it is in the `tsconfig.json` file (the `outDir` property).
 
+The folder `outDir` (in this case, `out`) should not be included in the source control because it will be generated when the project is built. This is why we should add it to the `.gitignore` file.
+
+**Example:**
+```gitignore
+out
+```
+
 
 
 ## Debugging

@@ -22,3 +22,4 @@
 - [01 - Setup Environment](./01-SetupEnvironment/README.md)
   - [01 - Hello World](./01-SetupEnvironment/01-HelloWorld/README.md)
   - [02 - Debugging](./01-SetupEnvironment/02-Debugging/README.md)
+  - [03 - Configure Project](./01-SetupEnvironment/03-ConfigureProject/README.md)
