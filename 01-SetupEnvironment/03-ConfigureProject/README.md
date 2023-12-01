@@ -66,7 +66,7 @@ To install TypeScript, we need to run `npm install typescript --save-dev`. This 
 
 We allways will need to create a `tsconfig.json` file. Run `npx tsc --init` to create it. And we can't forget to configure the `tsconfig.json` regarding the project's needs.
 
-After that, we already can compile using `npx tsc`.
+After that, we already can transpile using `npx tsc`.
 
 
 ### `package.json` scripts
@@ -84,16 +84,16 @@ We can create our custom scripts to improve the development experience. In the f
 }
 ```
 
-And we can use the command `npm run build` to compile the project and `npm run start` to run the project.
+And we can use the command `npm run build` to transpile the project and `npm run start` to run the project.
 
 
 ### Improve the running of the project
 
-For this, we need to install the `ts-node` package. This package will compile the project and run it.
+For this, we need to install the `ts-node` package. This package will transpile the project and run it.
 
 To install the `ts-node` package, we need to run `npm install ts-node --save-dev`. The `ts-node` also should be added to the `devDependencies`, because we only need it to improve the development experience.
 
-And now we can run the project using `npx ts-node app.ts`. Note that wasn't generated the `dist` folder. This is because the `ts-node` will compile the project in memory and run it.
+And now we can run the project using `npx ts-node app.ts`. Note that wasn't generated the `dist` folder. This is because the `ts-node` will transpile the project in memory and run it.
 
 We can improve again the experience to build and run the project, adding the following script to the `package.json` file:
 

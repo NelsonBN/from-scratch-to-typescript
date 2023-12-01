@@ -22,15 +22,15 @@ Let´s assume the project has already been configured. If not, go to the [01 - S
 
 To help us organize the project, we will create the following folders:
 
-- `src`: contains the source code of the project. The code in this folder will be compiled to the final artifacts we will deliver.
-- `tests`: contains the tests of the project. The code in this folder will not be compiled to the final artifacts, just used to validate our application.
+- `src`: contains the source code of the project. The code in this folder will be transpiled to the final artifacts we will deliver.
+- `tests`: contains the tests of the project. The code in this folder will not be transpiled to the final artifacts, just used to validate our application.
 
 We can use any folder names or structure we want. This is just a suggestion because it is a common structure aceppted by the community.
 
 
 ### Prepare `tsconfig.json` file
 
-In `tsconfig.json` file, we need to add the previous folders to the TypeScript can compile the code inside them.
+In `tsconfig.json` file, we need to add the previous folders to the TypeScript can transpile the code inside them.
 
 ```json
 {
@@ -90,7 +90,7 @@ export function sum(x: number, y: number) {
 Now, run the following command to run the tests:
 
 ```bash
-# Compile the code
+# Transpile the code
 tsc
 
 # Run the tests
@@ -109,12 +109,12 @@ On `package.json` file, add the following scripts:
 }
 ```
 
-And now, we can run the command `npm test` to compile and run the tests.
+And now, we can run the command `npm test` to transpile and run the tests.
 
 
 ### Improve test running experience
 
-We can use the `ts-jest` tool to run the tests without the need to compile the code before. To do that, we need to first configure jest using the command `npx ts-jest config:init`. This command will create a file named `jest.config.js` with the settings to run the tests using `ts-jest`.
+We can use the `ts-jest` tool to run the tests without the need to transpile the code before. To do that, we need to first configure jest using the command `npx ts-jest config:init`. This command will create a file named `jest.config.js` with the settings to run the tests using `ts-jest`.
 
 Now we can run the tests using the command `npx jest`. Note that we don´t need to pass the folder `./dist/tests` anymore.
 

@@ -2,13 +2,18 @@
 
 [<< Back](../README.md)
 
+- [About TypeScript](#about-typescript)
 - [Create first TypeScript file](#create-first-typescript-file)
-- [Compile and run steps](#compile-and-run-steps)
+- [Transpile and run steps](#transpile-and-run-steps)
   - [Run](#run)
 - [Using `tsconfig.json`](#using-tsconfigjson)
-- [Using VSCode to compile](#using-vscode-to-compile)
+- [Using VSCode to transpile](#using-vscode-to-transpile)
   - [Solve problem with `tsc` not found](#solve-problem-with-tsc-not-found)
 
+
+## About TypeScript
+- The first thing to know about TypeScript is that it is a superset of JavaScript. So, we can use JavaScript code in TypeScript files.
+- Second important thing we need to know TypeScript is not runnable. We always need to convert TypeScript code to JavaScript code before run it. And that is the reason for we say TypeScript is a transpiled language instead of a compiled language. Always we say "I will compile my TypeScript code" behind the scenes we are saying "I will transpile my TypeScript code".
 
 
 ## Create first TypeScript file
@@ -23,8 +28,9 @@ We used extension `.ts` because it is the extension used for TypeScript files.
 
 
 
-## Compile and run steps
-To compile the TypeScript file, we can use the command `tsc`:
+## Transpile and run steps
+
+To transpile the TypeScript file, we can use the command `tsc`:
 
 ```bash
 tsc app.ts
@@ -57,7 +63,7 @@ We can use the command `tsc --init` to create a `tsconfig.json` file with defaul
 }
 ```
 
-And then, we can use the command `tsc` to compile all TypeScript files;
+And then, we can use the command `tsc` to transpile all TypeScript files;
 
 ```bash
 tsc
@@ -65,12 +71,12 @@ tsc
 
 
 
-## Using VSCode to compile
+## Using VSCode to transpile
 
 We can use the shortcut `Ctrl + Shift + B` and select the option:
 
-- `tsc: build - tsconfig.json` - To compile all TypeScript files;
-- `tsc: watch - tsconfig.json` - To compile all TypeScript files and watch for changes;
+- `tsc: build - tsconfig.json` - To transpile all TypeScript files;
+- `tsc: watch - tsconfig.json` - To transpile all TypeScript files and watch for changes;
 
 ### Solve problem with `tsc` not found
 
