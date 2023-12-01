@@ -6,6 +6,7 @@
 - [Create first TypeScript file](#create-first-typescript-file)
 - [Transpile and run steps](#transpile-and-run-steps)
   - [Run](#run)
+  - [Transpile and run in one step](#transpile-and-run-in-one-step)
 - [Using `tsconfig.json`](#using-tsconfigjson)
 - [Using VSCode to transpile](#using-vscode-to-transpile)
   - [Solve problem with `tsc` not found](#solve-problem-with-tsc-not-found)
@@ -43,6 +44,12 @@ To run the JavaScript file, we can use the command `node`:
 
 ```bash
 node app.js
+```
+
+### Transpile and run in one step
+```bash
+# In windows
+tsc app.ts --outDir ./out ; node ./out/app.js
 ```
 
 
