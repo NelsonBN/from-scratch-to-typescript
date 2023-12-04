@@ -1,5 +1,8 @@
-let myName: string = 'Nelson D. Nobre';
-console.log(`myName: ${myName} -> typeof ${typeof(myName)}`);
+let myFirstName: string = 'Nelson';
+console.log(`myName: ${myFirstName} -> typeof ${typeof(myFirstName)}`);
+
+let myLastName: string = "Nobre";
+console.log(`myName: ${myLastName} -> typeof ${typeof(myLastName)}`);
 
 let fruits: string[] = ['Apple', 'Orange', 'Banana'];
 console.log(`fruits: ${fruits} -> typeof ${typeof(fruits)}`);
