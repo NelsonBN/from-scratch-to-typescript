@@ -25,3 +25,5 @@
   - [03 - Configure Project](./01-SetupEnvironment/03-ConfigureProject/README.md)
 - [02 - Tests](./02-Tests/README.md)
   - [01 - Setup Tests](./02-Tests/01-SetupTests/README.md)
+- [03 - Types](./03-Types/README.md)
+  - [02 - Arrays](./03-Types/02-Arrays/README.md)
