@@ -64,7 +64,7 @@ To install TypeScript, we need to run `npm install typescript --save-dev`. This 
 
 ### Create `tsconfig.json` file
 
-We allways will need to create a `tsconfig.json` file. Run `npx tsc --init` to create it. And we can't forget to configure the `tsconfig.json` regarding the project's needs.
+We allways will need to create a `tsconfig.json` file. Run `npx tsc --init` or just `tsc --init` to create it. And we can't forget to configure the `tsconfig.json` regarding the project's needs.
 
 After that, we already can transpile using `npx tsc`.
 
