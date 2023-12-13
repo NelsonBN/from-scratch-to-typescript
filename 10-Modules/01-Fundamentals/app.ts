@@ -5,7 +5,9 @@ console.log(sub(1, 2));
 console.log(mult(1, 2));
 console.log(div(1, 2));
 
+
 console.log("--------------------------------------------------");
+
 
 import MyPerson from './Person';
 
@@ -21,6 +23,7 @@ console.log(user);
 
 console.log("--------------------------------------------------");
 
+
 import { IAddress as Address, ICountry } from './Address';
 
 const address: Address = {
@@ -34,3 +37,18 @@ const country: ICountry = {
     country: "Spain"
 }
 console.log(country);
+
+
+console.log("--------------------------------------------------");
+
+import * as Utils from './Utils';
+
+console.log("Utils: ", Utils);
+console.log("Utils typeof: ", typeof Utils);
+console.log("---");
+console.log("Utils.PI: ", Utils.PI);
+console.log("Utils.PI typeof: ", typeof Utils.PI);
+console.log("---");
+console.log("Utils.calculateCircumference: ", Utils.calculateCircumference);
+console.log("Utils.calculateCircumference typeof: ", typeof Utils.calculateCircumference);
+console.log("Utils.calculateCircumference -> result: ", Utils.calculateCircumference(5));

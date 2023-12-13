@@ -3,6 +3,7 @@
 - [Requirements](#requirements)
 - [References](#references)
   - [Learning path](#learning-path)
+- [Credits](#credits)
 
 
 ## Requirements
@@ -27,3 +28,11 @@
   - [01 - Setup Tests](./02-Tests/01-SetupTests/README.md)
 - [03 - Types](./03-Types/README.md)
   - [02 - Arrays](./03-Types/02-Arrays/README.md)
+
+
+## Credits
+
+This repository was created based on the following repositories:
+
+- [Curso TypeScript - Zero to Hero (Glaucia Lemos)](https://github.com/glaucia86/curso-typescript-zero-to-hero)
+  - If you want to start learning TypeScript, and you want to learn from scratch, I recommend this repository. (In Portuguese)
